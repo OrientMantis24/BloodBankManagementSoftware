@@ -1,0 +1,25 @@
+﻿<Window x:Class="BloodBankManagementSoftware.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BloodBankManagementSoftware"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Name="PnlMainWindow" Background="LightBlue">
+        <Grid.ColumnDefinitions>
+
+
+
+
+            <ColumnDefinition/>
+
+
+
+
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Register_btn" Content="Register new user" HorizontalAlignment="Left" Margin="182,84,0,0" VerticalAlignment="Top" Width="133" Height="30" Click="Register_btn_Click" ClickMode="Press"/>
+        <Label x:Name="Title_lbl" Content="Blood  Bank Management Software" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="42" Width="497" FontWeight="Bold" FontStyle="Italic" FontFamily="Gungsuh" FontSize="21.333" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
