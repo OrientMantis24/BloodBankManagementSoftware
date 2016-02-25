@@ -4,35 +4,36 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BloodBankManagementSoftware"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Register" Height="303.361" Width="300" Background="LightBlue"
-        Closing="Window_Closing">
+        Title="Register" Height="303.361" Width="300" Background="LightBlue" ResizeMode="NoResize">
 
     <Grid RenderTransformOrigin="0.501,0.609" Margin="0,0,0,1">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="47*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="RegisterTitle_lbl" Content="New donator registration" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="272" FontSize="16" FontFamily="Gungsuh" FontWeight="Bold" FontStyle="Italic" HorizontalContentAlignment="Center" Height="28"/>
-        <TextBox x:Name="Name_txb" HorizontalAlignment="Left" Height="23" Margin="116,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <Label x:Name="RegisterTitle_lbl" Content="New donator registration" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="272" FontSize="16" FontFamily="Gungsuh" FontWeight="Bold" FontStyle="Italic" HorizontalContentAlignment="Center" Height="28" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Name_txb" HorizontalAlignment="Left" Height="23" Margin="116,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2"/>
         <Label x:Name="Name_lbl" Content="Name" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
         <Label x:Name="BloodGroup_lbl" Content="Blood Group" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Height="30" Width="92"/>
         <Label x:Name="RhFactor_lbl" Content="Rh factor" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
-        <ComboBox x:Name="RhFactor_cb" HorizontalAlignment="Left" Margin="116,136,0,0" VerticalAlignment="Top" Width="149">
+        <ComboBox x:Name="RhFactor_cbb" HorizontalAlignment="Left" Margin="116,136,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2">
             <ComboBoxItem Name="positive" IsSelected="True">positive</ComboBoxItem>
             <ComboBoxItem Name="negative">negative</ComboBoxItem>
         </ComboBox>
-        <ComboBox x:Name="RhFactor_cb_Copy" HorizontalAlignment="Left" Margin="116,107,0,0" VerticalAlignment="Top" Width="149">
+        <ComboBox x:Name="BloodGroup_cbb" HorizontalAlignment="Left" Margin="116,107,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2">
             <ComboBoxItem Name="A" IsSelected="True" >A</ComboBoxItem>
             <ComboBoxItem x:Name="B">B</ComboBoxItem>
             <ComboBoxItem Name="AB">AB</ComboBoxItem>
             <ComboBoxItem Name="O">O</ComboBoxItem>
         </ComboBox>
         <Label Name="Town_lbl" Content="Town" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
-        <TextBox Name="Town_txb" HorizontalAlignment="Left" Height="23" Margin="116,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <TextBox Name="Town_txb" HorizontalAlignment="Left" Height="23" Margin="116,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2"/>
         <Label Name="PhoneNumber_lbl" Content="Phone Number" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
-        <TextBox Name="PhoneNumber_txb" HorizontalAlignment="Left" Height="23" Margin="116,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <xctk:MaskedTextBox Name="PhoneNumber_txb" Mask="000-000-000" HorizontalAlignment="Left" Height="23" Margin="116,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" BorderThickness="0" Background="LightBlue" Grid.ColumnSpan="2"/>
         <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="75" Click="Back_btn_Click"/>
-        <Button Name="Submit_btn" Content="Submit" HorizontalAlignment="Left" Margin="155,241,0,0" VerticalAlignment="Top" Width="110" Background="#FFEE4848" FontWeight="Bold"/>
+        <Button Name="Submit_btn" Content="Submit" HorizontalAlignment="Left" Margin="172,241,0,0" VerticalAlignment="Top" Width="110" Background="#FFEE4848" FontWeight="Bold" Click="Submit_btn_Click" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

@@ -39,5 +39,16 @@ namespace BloodBankManagementSoftware
             OP.Show();
             //this.Close();
         }
+
+        private void Exit_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Search_btn_Click(object sender, RoutedEventArgs e)
+        {
+            SearchForDonator OP = new SearchForDonator();
+            OP.Show();
+        }
     }
 }
