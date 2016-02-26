@@ -14,16 +14,11 @@
 
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
-
-
-
-
         </Grid.ColumnDefinitions>
         <Button x:Name="Register_btn" Content="Register new user" HorizontalAlignment="Left" Margin="182,84,0,0" VerticalAlignment="Top" Width="133" Height="30" Click="Register_btn_Click" ClickMode="Press" Grid.ColumnSpan="2"/>
         <Label x:Name="Title_lbl" Content="Blood  Bank Management Software" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="42" Width="497" FontWeight="Bold" FontStyle="Italic" FontFamily="Gungsuh" FontSize="21.333" HorizontalContentAlignment="Center" Grid.ColumnSpan="2"/>
         <Button x:Name="Search_btn" Content="Search for donator" HorizontalAlignment="Left" Margin="182,119,0,0" VerticalAlignment="Top" Width="133" Height="30" ClickMode="Press" Grid.ColumnSpan="2" Click="Search_btn_Click"/>
-        <Button x:Name="FindDonator_btn" Content="Find your donator" HorizontalAlignment="Left" Margin="182,154,0,0" VerticalAlignment="Top" Width="133" Height="30" ClickMode="Press" Grid.ColumnSpan="2"/>
+        <Button x:Name="FindDonator_btn" Content="Find your donator" HorizontalAlignment="Left" Margin="182,154,0,0" VerticalAlignment="Top" Width="133" Height="30" ClickMode="Press" Grid.ColumnSpan="2" Click="FindDonator_btn_Click"/>
         <Button x:Name="Exit_btn" Content="Exit" HorizontalAlignment="Left" Margin="411,220,0,0" VerticalAlignment="Top" Width="96" Height="30" Click="Exit_btn_Click" ClickMode="Press" Grid.ColumnSpan="2" Background="IndianRed"/>
-
     </Grid>
 </Window>

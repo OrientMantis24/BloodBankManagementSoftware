@@ -91,6 +91,9 @@
     <Compile Include="Donator.cs" />
     <Compile Include="DonatorContext.cs" />
     <Compile Include="DonatorsDatabase.cs" />
+    <Compile Include="FindDonator.xaml.cs">
+      <DependentUpon>FindDonator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FoundDonatorEntries.xaml.cs">
       <DependentUpon>FoundDonatorEntries.xaml</DependentUpon>
     </Compile>
@@ -100,6 +103,10 @@
     <Compile Include="SearchForDonator.xaml.cs">
       <DependentUpon>SearchForDonator.xaml</DependentUpon>
     </Compile>
+    <Page Include="FindDonator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FoundDonatorEntries.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -8,7 +8,7 @@ namespace BloodBankManagementSoftware
 {
     class Donator
     {
-        public int DonatorID { get; set;  }
+        //public int DonatorID { get; set;  }
         public string Name { get; set; }
         public string BloodGroup { get; set; }
         public string RhFactor { get; set; }

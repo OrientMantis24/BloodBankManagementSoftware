@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace BloodBankManagementSoftware
 {
@@ -21,10 +9,6 @@ namespace BloodBankManagementSoftware
             InitializeComponent();
         }
 
-        public static string SearchedName;
-        public static string SearchedTown;
-        public static string SearchedPhoneNumber;
-
         private void Back_btn_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -32,10 +16,7 @@ namespace BloodBankManagementSoftware
 
         private void Search_btn_Click(object sender, RoutedEventArgs e)
         {
-            SearchedName = Name_txb.Text;
-            SearchedTown = Town_txb.Text;
-            SearchedPhoneNumber = PhoneNumber_txb.Text;
-            FoundDonatorEntries OP = new FoundDonatorEntries();
+            FoundDonatorEntries OP = new FoundDonatorEntries(Name_txb.Text, Town_txb.Text, PhoneNumber_txb.Text);
             OP.Show();
         }
     }

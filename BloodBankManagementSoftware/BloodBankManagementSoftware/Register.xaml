@@ -18,15 +18,15 @@
         <Label x:Name="Name_lbl" Content="Name" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
         <Label x:Name="BloodGroup_lbl" Content="Blood Group" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Height="30" Width="92"/>
         <Label x:Name="RhFactor_lbl" Content="Rh factor" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
-        <ComboBox x:Name="RhFactor_cbb" HorizontalAlignment="Left" Margin="116,136,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2">
-            <ComboBoxItem Name="positive" IsSelected="True">positive</ComboBoxItem>
-            <ComboBoxItem Name="negative">negative</ComboBoxItem>
-        </ComboBox>
         <ComboBox x:Name="BloodGroup_cbb" HorizontalAlignment="Left" Margin="116,107,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2">
             <ComboBoxItem Name="A" IsSelected="True" >A</ComboBoxItem>
             <ComboBoxItem x:Name="B">B</ComboBoxItem>
             <ComboBoxItem Name="AB">AB</ComboBoxItem>
             <ComboBoxItem Name="O">O</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="RhFactor_cbb" HorizontalAlignment="Left" Margin="116,136,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2">
+            <ComboBoxItem Name="positive" IsSelected="True">positive</ComboBoxItem>
+            <ComboBoxItem Name="negative">negative</ComboBoxItem>
         </ComboBox>
         <Label Name="Town_lbl" Content="Town" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
         <TextBox Name="Town_txb" HorizontalAlignment="Left" Height="23" Margin="116,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" BorderThickness="0" Grid.ColumnSpan="2"/>

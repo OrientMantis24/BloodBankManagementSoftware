@@ -1,0 +1,27 @@
+﻿<Window x:Class="BloodBankManagementSoftware.FindDonator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BloodBankManagementSoftware"
+        mc:Ignorable="d"
+        Title="FindDonator" Height="267.042" Width="300" Background="LightBlue">
+    <Grid Margin="0,0,0,-1">
+        <Label x:Name="Title_lbl" Content="Find your donator" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="272" FontSize="21.333" FontFamily="Gungsuh" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="BloodGroup_lbl" Content="Blood Group" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Height="30" Width="92"/>
+        <Label x:Name="RhFactor_lbl" Content="Rh factor" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Height="23" Width="92"/>
+        <ComboBox x:Name="BloodGroup_cbb" HorizontalAlignment="Left" Margin="116,91,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0">
+            <ComboBoxItem Name="A" IsSelected="True" >A</ComboBoxItem>
+            <ComboBoxItem x:Name="B">B</ComboBoxItem>
+            <ComboBoxItem Name="AB">AB</ComboBoxItem>
+            <ComboBoxItem Name="O">O</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="RhFactor_cbb" HorizontalAlignment="Left" Margin="116,125,0,0" VerticalAlignment="Top" Width="149" BorderThickness="0">
+            <ComboBoxItem Name="positive" IsSelected="True">positive</ComboBoxItem>
+            <ComboBoxItem Name="negative">negative</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="75" Click="Back_btn_Click"/>
+        <Button x:Name="Search_btn" Content="Search" HorizontalAlignment="Left" Margin="169,207,0,0" VerticalAlignment="Top" Width="113" Background="IndianRed" Click="Search_btn_Click"/>
+
+    </Grid>
+</Window>
